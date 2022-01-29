@@ -1,3 +1,10 @@
+'''
+Author: Jim Huang
+Date: 2022-01-21 09:09:40
+LastEditors: Jim Huang
+LastEditTime: 2022-01-29 15:04:01
+Description: 请填写简介
+'''
 # 
 
 def f(n):
@@ -16,5 +23,5 @@ print(revert(len(data)-1))
 def peach(days=10):
     if days == 1:
         return 1
-    return (peach(days+1)+1)*2
+    return (peach(days-1)+1)*2
 print(peach())

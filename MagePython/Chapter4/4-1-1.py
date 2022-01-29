@@ -1,10 +1,10 @@
 '''
-Descripttion: 
+Description: 
 version: 
 Author: Jim Huang
 Date: 2021-05-04 17:58:45
-LastEditors: CoderXZ
-LastEditTime: 2021-05-04 23:15:33
+LastEditors: Jim Huang
+LastEditTime: 2022-01-28 16:31:33
 '''
 import random
 def comparenumber(x,y):

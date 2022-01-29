@@ -3,8 +3,8 @@ Descripttion:
 version: 
 Author: Jim Huang
 Date: 2021-05-08 22:38:41
-LastEditors: CoderXZ
-LastEditTime: 2021-05-09 21:31:18
+LastEditors: Jim Huang
+LastEditTime: 2022-01-29 16:44:54
 '''
 def gen():
     print("line 1")
@@ -21,5 +21,7 @@ g = gen()
 print("="*20)
 print(next(g))
 print(next(g))
-print(next(g))
-# print(next(g,'End'))
+print("*"*20)
+#print(next(g))
+print(next(g,'End'))
+#print(next(g))
