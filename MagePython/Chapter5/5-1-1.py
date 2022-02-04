@@ -7,5 +7,5 @@ def counter(base):
 f1 = counter(10)
 print(f1())
 f2 = counter(10)
-print(f2)
+print(f2())
 print(f1==f2)
