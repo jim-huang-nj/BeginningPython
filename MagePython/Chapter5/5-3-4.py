@@ -1,7 +1,12 @@
-from tkinter import Y
-
+def copy_properties(src):
+    def _copy(dst):
+        dst.__name__=src.__name__
+        dst.__doc__ = src.__doc__
+        return dst
+    return _copy
 
 def logger(fn):
+    @copy_properties(fn) #wrapper = copy_propertiest(fn)(wrapper)
     def wrapper(*args,**kwargs):
         """I am wrapper"""
         print("begin")

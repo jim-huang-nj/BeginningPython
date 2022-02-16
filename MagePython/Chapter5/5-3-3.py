@@ -1,5 +1,6 @@
-from tkinter import Y
-
+def copy_properties(src,dst):
+    dst.__name__=src.__name__
+    dst.__doc__ = src.__doc__
 
 def logger(fn):
     def wrapper(*args,**kwargs):
@@ -8,6 +9,7 @@ def logger(fn):
         x = fn(*args,**kwargs)
         print("end")
         return x
+    copy_properties(fn,wrapper)
     return wrapper
 
 @logger #add = logger(add)
